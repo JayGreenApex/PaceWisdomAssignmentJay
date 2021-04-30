@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PaceWisdom_Assignment.iml" filepath="$PROJECT_DIR$/.idea/modules/PaceWisdom_Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PaceWisdom_Assignment.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PaceWisdom_Assignment.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/PaceWisdom_Assignment.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/PaceWisdom_Assignment.library.iml" />
+    </modules>
+  </component>
+</project>

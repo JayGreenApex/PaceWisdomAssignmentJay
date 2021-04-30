@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#0461E5</color>
+    <color name="purple_500">#0461E5</color>
+    <color name="purple_700">#0461E5</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#0461E5</color>
+    <color name="colorPrimaryDark">#0461E5</color>
+    <color name="colorAccent">#E91E63</color>
+    <color name="background">#f5f5f5</color>
+    <color name="divider">#E4E4E4</color>
+
+    <color name="constraint_background_dashboard">#F6F6F9</color>
+    <color name="dashboard_text_color">#181636</color>
+    <color name="edit_text_color">#A3A2AF</color>
+
+    <color name="goal_text_color">#D1D0D7</color>
+
+    <color name="light_gray">#dbdbdb</color>
+    <color name="gray">#E1E1E1</color>
+</resources>

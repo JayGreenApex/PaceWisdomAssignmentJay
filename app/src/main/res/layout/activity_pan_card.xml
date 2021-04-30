@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/constraint_background_dashboard"
+    tools:context=".navcontroller.PanCardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgBack"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvCompleteLater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:fontFamily="@font/cabin_regular"
+            android:text="@string/complete_later"
+            android:textAllCaps="false"
+            android:textColor="@color/goal_text_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvQuickKYC"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/cabin_bold"
+            android:text="@string/quick_online"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvCompleteLater">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txvChargeAhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/cabin_regular"
+            android:text="@string/charge_ahead"
+            android:textAllCaps="false"
+            android:textColor="@color/goal_text_color"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txvQuickKYC">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/ic_round_count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txvCompleteLater">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:fontFamily="@font/cabin_regular"
+                android:text="2/7"
+                android:textAllCaps="false"
+                android:textColor="@color/goal_text_color"
+                android:textSize="@dimen/_12ssp">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_100sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/bg_edit_text_white">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvPanDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/cabin_semibold"
+                android:text="@string/pan_card_details"
+                android:textAllCaps="false"
+                android:textColor="@color/dashboard_text_color"
+                android:textSize="@dimen/_13ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:src="@drawable/ic_infor_pan_details"
+                app:layout_constraintStart_toEndOf="@+id/txvPanDetails"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvVerifyDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/cabin_regular"
+                android:text="@string/verify_details"
+                android:textAllCaps="false"
+                android:textColor="@color/dashboard_text_color"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvPanDetails">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <FrameLayout
+                android:id="@+id/framePanOne"
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:background="@drawable/ic_pan_card_borders"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvVerifyDetails">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPanOne"
+                    android:layout_width="@dimen/_105sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:src="@drawable/ic_calander"
+                    android:visibility="gone">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPanOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/cabin_bold"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="@string/pick_image"
+                    android:textAllCaps="false"
+                    android:textColor="@color/light_gray">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/framePanTwo"
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/ic_pan_card_borders"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvVerifyDetails">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPanTwo"
+                    android:layout_width="@dimen/_105sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:src="@drawable/ic_calander"
+                    android:visibility="gone">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnPanTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/cabin_bold"
+                    android:paddingTop="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_8sdp"
+                    android:text="@string/pick_image"
+                    android:textAllCaps="false"
+                    android:textColor="@color/light_gray">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </FrameLayout>
+
+            <!-- Pan Number -->
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tdvLabelPanCard"
+                style="@style/EditCard.General.Info.Label"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/pan_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/framePanOne">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPanCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:inputType="textNoSuggestions|textVisiblePassword"
+                app:hintEnabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tdvLabelPanCard">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFirstName"
+                    style="@style/EditCard.TextLabel"
+                    android:inputType="textCapWords|text|textNoSuggestions|textVisiblePassword"
+                    android:maxLength="20"
+                    android:text="XXXXXXX88N" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Full Name -->
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvLabelFullName"
+                style="@style/EditCard.General.Info.Label"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/full_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInputPanCard">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:inputType="textNoSuggestions|textVisiblePassword"
+                app:hintEnabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txvLabelFullName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFullName"
+                    style="@style/EditCard.TextLabel"
+                    android:inputType="textCapWords|text|textNoSuggestions|textVisiblePassword"
+                    android:maxLength="20"
+                    android:text="Jay Rathod" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Father's Name -->
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvLabelFatherName"
+                style="@style/EditCard.General.Info.Label"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/father_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInputFullName">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputFatherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:inputType="textNoSuggestions|textVisiblePassword"
+                app:hintEnabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txvLabelFatherName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFatherName"
+                    style="@style/EditCard.TextLabel"
+                    android:inputType="textCapWords|text|textNoSuggestions|textVisiblePassword"
+                    android:maxLength="20"
+                    android:text="BH Rathod" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Date of Birth -->
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvLabelDateBirth"
+                style="@style/EditCard.General.Info.Label"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/date_of_birth"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInputFatherName">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputDateBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:inputType="textNoSuggestions|textVisiblePassword"
+                app:hintEnabled="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txvLabelDateBirth">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDateBirth"
+                    style="@style/EditCard.TextLabel"
+                    android:drawableEnd="@drawable/ic_calander"
+                    android:inputType="textCapWords|text|textNoSuggestions|textVisiblePassword"
+                    android:maxLength="20"
+                    android:paddingEnd="@dimen/_4sdp"
+                    android:text="23-04-2030" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgNoCard"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:src="@drawable/ic_info_no_card"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputDateBirth">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txvNoCardDetails"
+                android:layout_width="@dimen/_175sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/cabin_regular"
+                android:maxLines="2"
+                android:text="@string/no_pan_info"
+                android:textAllCaps="false"
+                android:textColor="@color/dashboard_text_color"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toEndOf="@+id/imgNoCard"
+                app:layout_constraintTop_toBottomOf="@+id/textInputDateBirth">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/goal_calculator_bg"
+                android:fontFamily="@font/cabin_regular"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

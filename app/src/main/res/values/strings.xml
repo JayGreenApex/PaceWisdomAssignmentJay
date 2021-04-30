@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">PaceWisdom Assignment</string>
+
+    <string name="tab_alarm">Dashboard</string>
+    <string name="tab_bedtime">Fractions</string>
+    <string name="tab_stopwatch">ProTrade</string>
+    <string name="tab_timer">Profile</string>
+    <string name="tab_goals">Goals</string>
+
+
+    <!-- Constraint Dashboard Top-->
+
+    <string name="goals_dashboard">Goals Dashboard</string>
+    <string name="explore_set_goals">Explore and set new goals</string>
+    <string name="search_new">Search new and active goals</string>
+
+    <string name="start_investing">Start Investing</string>
+    <string name="add_your_goal">add your 1st goal</string>
+    <string name="how_to_setup_goals">how to setup goals?</string>
+    <string name="secure_your_future">Secure your future. Add a financial goal
+        \nor life goal that you want to secure. and
+        \nwe will help your achieve them.</string>
+
+    <string name="our_recommendations">Our recommendations</string>
+    <string name="see_all">see all</string>
+    <string name="based_on_risk">Based on your risk assessment and profile information we have put together a few goals for you:</string>
+
+    <string name="retire_with_maximum">Retire with maximum savings!</string>
+    <string name="retire_with_five">Retire with 5 crores by Oct 2040</string>
+
+    <string name="education_fund">Education Fund</string>
+    <string name="get_best_education">Get the best education possible. \n Invest now.</string>
+
+    <string name="marriage_fund">Marriage Fund</string>
+    <string name="dreaming_of_wedding">Dreaming of a destination wedding? Invest, earn and live the dream. </string>
+
+    <string name="vacation_fund">Vacation Fund</string>
+    <string name="male_your_next_vacation">Make your next vacation special.Save and Invest now.</string>
+
+    <string name="dream_vehicle">Dream Vehicle</string>
+    <string name="owning_vehicle">Turn the dream of owning a vehicle into reality. Save and invest now.</string>
+
+    <string name="goal_calculator">Goal Calculator</string>
+    <string name="goal_calculator_small">goal calculator</string>
+    <string name="forecast_financial_needs">Forecast your financial needs</string>
+    <string name="goals_calc_desc">Understand how much you will need to save
+        \nfor your various lifestyle and financial goals.</string>
+
+    <string name="why_invest_with_us">Why invest with us</string>
+    <string name="thanks_to_appreciate">Thanks to appreciate. I\'ve made 5x on my investment</string>
+    <string name="user">Avinash Singh</string>
+    <string name="marketing_consultant">Marketing Consultant</string>
+
+
+    <string name="complete_later">complete later</string>
+    <string name="quick_online">Quick, online KYC for better security</string>
+    <string name="charge_ahead">Charge ahead!</string>
+    <string name="pan_card_details">PAN Card details</string>
+    <string name="verify_details">Please verify the details extracted from OCR</string>
+    <string name="pan_number">Pan Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="father_name">Father Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="no_pan_info">No PAN Card? We can help you apply for a PAN card. know more</string>
+    <string name="next">Next</string>
+
+    <string name="pick_image">Pick Image</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="cancel">Cancel</string>
+</resources>

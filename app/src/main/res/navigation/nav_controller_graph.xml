@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/first_fragment">
+
+    <fragment
+        android:id="@+id/first_fragment"
+        android:name="com.assignment.pacewisdom.navcontroller.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/dashboard_fragment">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/second_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/second_fragment"
+        android:name="com.assignment.pacewisdom.navcontroller.GoalsFragment"
+        android:label="Goals"
+        tools:layout="@layout/goals_fragment">
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/third_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/third_fragment"
+        android:name="com.assignment.pacewisdom.navcontroller.FractionsFragment"
+        android:label="Fractions"
+        tools:layout="@layout/fractions_fragment">
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/fourth_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourth_fragment"
+        android:name="com.assignment.pacewisdom.navcontroller.ProTradeFragment"
+        android:label="Pro Trade"
+        tools:layout="@layout/protrade_fragment">
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment"
+            app:destination="@id/fifth_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifth_fragment"
+        android:name="com.assignment.pacewisdom.navcontroller.ChangeFragment"
+        android:label="Change"
+        tools:layout="@layout/change_fragment" />
+</navigation>
